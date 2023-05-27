@@ -5,8 +5,219 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
+    <meta name="description" content="Youtube Clone Coding"/>
+    <meta name="author" content="Ahreum"/>
+    <link rel="icon" type="image/png" href="imgs/Youtube_logo.png">
+    <script 
+        src="https://kit.fontawesome.com/865635acd7.js" 
+        crossorigin="anonymous">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+    <section id="navbar" class="section">
+        <div class="navbar__toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navbar__logo">
+            <img src="imgs/YouTube_Logo_word.png" alt="Youtube logo" width="90" height="20">
+        </div>
+        <div class="navbar__seach-bar"></div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li class="navbar__menu__item">
+                <i class="fa-solid fa-microphone"></i>
+            </li>
+            <li class="navbar__menu__item">
+                <i class="fa-solid fa-video"></i>
+            </li>
+            <li class="navbar__menu__item">
+                <i class="fa-regular fa-bell"></i>
+            </li>
+        </ul>
+        <div class="navbar__user_profile"></div>
+    </section>
+    <section id="content" class="section">
+        <div class="content__video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Os_heh8vPfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content__title">
+            <h1>aespa 에스파 'Spicy' MV</h1>
+        </div>
+        <div class="content__uploader">
+            <img src="/imgs/uploader_profile.jpeg" alt="uploader_profile">
+            <h2 class="content__uploader__name">SMTOWN</h2>
+            <p class="content__uploader__subscribers">subscribers 31M</p>
+            <button class="content__uploader__subs-btn">Subscribe</button>
+        </div>
+        <div class="content__btns">
+            <button class="like">
+                <i class="fa-regular fa-thumbs-up"></i>
+            </button>
+            <button class="dislike">
+                <i class="fa-regular fa-thumbs-down"></i>
+            </button>
+            <button class="download">
+                <i class="fa-solid fa-arrow-down">
+                    download
+                </i>
+            </button>
+            <button class="etc">
+                <i class="fa-solid fa-ellipsis"></i>
+            </button>
+        </div>
+        <div class="content__explain">
+            <h3 class="content__explain__view"></h3>
+            <h3 class="content__explain__upload-date"></h3>
+            <p class="content__explain__spinnet">aespa's 3rd Mini Album "MY WORLD" is out!
+                Listen and download on your favorite platforms: </p>
+        </div>
+    </section>
+    <section id="recommendation" class="section">
+        <ul class="recommendation__list">
+            <li class="recommendation__list__video video1">
+                <img src="/imgs/thumnails.jpeg" alt="" class="recommendation__list__video__thumbnail">
+                <h2 class="recommendation__list__video__title">Title</h2>
+                <p class="recommendation__list__video__uploader">unknown</p>
+                <div class="recommendation__list__video__inform">
+                    <p class="recommendation__list__video__inform__view">10k</p>
+                    <p class="recommendation__list__video__inform__date">3w ago</p>
+                </div>
+            </li>
+            <li class="recommendation__list__video video2">
+                <img src="/imgs/thumnails.jpeg" alt="" class="recommendation__list__video__thumbnail">
+                <h2 class="recommendation__list__video__title">Title</h2>
+                <p class="recommendation__list__video__inform__view">10k</p>
+                <p class="recommendation__list__video__inform__date">3w ago</p>
+            </li>
+            <li class="recommendation__list__video video3">
+                <img src="/imgs/thumnails.jpeg" alt="" class="recommendation__list__video__thumbnail">
+                <h2 class="recommendation__list__video__title">Title</h2>
+                <p class="recommendation__list__video__inform__view">10k</p>
+                <p class="recommendation__list__video__inform__date">3w ago</p>
+            </li>
+            <li class="recommendation__list__video video4">
+                <img src="/imgs/thumnails.jpeg" alt="" class="recommendation__list__video__thumbnail">
+                <h2 class="recommendation__list__video__title">Title</h2>
+                <p class="recommendation__list__video__inform__view">10k</p>
+                <p class="recommendation__list__video__inform__date">3w ago</p>
+            </li>
+            <li class="recommendation__list__video video5">
+                <img src="/imgs/thumnails.jpeg" alt="" class="recommendation__list__video__thumbnail">
+                <h2 class="recommendation__list__video__title">Title</h2>
+                <p class="recommendation__list__video__inform__view">10k</p>
+                <p class="recommendation__list__video__inform__date">3w ago</p>
+            </li>
+            <li class="recommendation__list__video video6">
+                <img src="/imgs/thumnails.jpeg" alt="" class="recommendation__list__video__thumbnail">
+                <h2 class="recommendation__list__video__title">Title</h2>
+                <p class="recommendation__list__video__inform__view">10k</p>
+                <p class="recommendation__list__video__inform__date">3w ago</p>
+            </li>
+            <li class="recommendation__list__video video7">
+                <img src="/imgs/thumnails.jpeg" alt="" class="recommendation__list__video__thumbnail">
+                <h2 class="recommendation__list__video__title">Title</h2>
+                <p class="recommendation__list__video__inform__view">10k</p>
+                <p class="recommendation__list__video__inform__date">3w ago</p>
+            </li>
+            <li class="recommendation__list__video video8">
+                <img src="/imgs/thumnails.jpeg" alt="" class="recommendation__list__video__thumbnail">
+                <h2 class="recommendation__list__video__title">Title</h2>
+                <p class="recommendation__list__video__inform__view">10k</p>
+                <p class="recommendation__list__video__inform__date">3w ago</p>
+            </li>
+            <li class="recommendation__list__video video9">
+                <img src="/imgs/thumnails.jpeg" alt="" class="recommendation__list__video__thumbnail">
+                <h2 class="recommendation__list__video__title">Title</h2>
+                <p class="recommendation__list__video__inform__view">10k</p>
+                <p class="recommendation__list__video__inform__date">3w ago</p>
+            </li>
+            <li class="recommendation__list__video video10">
+                <img src="/imgs/thumnails.jpeg" alt="" class="recommendation__list__video__thumbnail">
+                <h2 class="recommendation__list__video__title">Title</h2>
+                <p class="recommendation__list__video__inform__view">10k</p>
+                <p class="recommendation__list__video__inform__date">3w ago</p>
+            </li>
+        </ul>
+    </section>
+    <div id="comments" class="section">
+        <h3 class="comments__number">Comments 133,633</h3>
+        <div class="comments__write">
+            <img src="imgs/profile.png" alt="comments profile">
+            <input type="text" class="comments__write__box">
+        </div>
+        <ul class="comments__list">
+            <li class="comments__list__box">
+                <img src="imgs/profile.png" alt="">
+                <div class="comments__content">
+                    <h3 class="comments__writer">Yerin</h3>
+                    <p class="comment">Karina is godness</p>
+                    <button class="comment__like">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                    </button>
+                    <button class="comment__dislike">
+                        <i class="fa-regular fa-thumbs-down"></i>
+                    </button>
+                </div>
+            </li>
+            <li class="comments__list__box">
+                <img src="imgs/profile.png" alt="">
+                <div class="comments__content">
+                    <h3 class="comments__writer">Yerin</h3>
+                    <p class="comment">Karina is godness</p>
+                    <button class="comment__like">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                    </button>
+                    <button class="comment__dislike">
+                        <i class="fa-regular fa-thumbs-down"></i>
+                    </button>
+                </div>
+            </li>
+            <li class="comments__list__box">
+                <img src="imgs/profile.png" alt="">
+                <div class="comments__content">
+                    <h3 class="comments__writer">Yerin</h3>
+                    <p class="comment">Karina is godness</p>
+                    <button class="comment__like">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                    </button>
+                    <button class="comment__dislike">
+                        <i class="fa-regular fa-thumbs-down"></i>
+                    </button>
+                </div>
+            </li>
+            <li class="comments__list__box">
+                <img src="imgs/profile.png" alt="">
+                <div class="comments__content">
+                    <h3 class="comments__writer">Yerin</h3>
+                    <p class="comment">Karina is godness</p>
+                    <button class="comment__like">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                    </button>
+                    <button class="comment__dislike">
+                        <i class="fa-regular fa-thumbs-down"></i>
+                    </button>
+                </div>
+            </li>
+            <li class="comments__list__box">
+                <img src="imgs/profile.png" alt="">
+                <div class="comments__content">
+                    <h3 class="comments__writer">Yerin</h3>
+                    <p class="comment">Karina is godness</p>
+                    <button class="comment__like">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                    </button>
+                    <button class="comment__dislike">
+                        <i class="fa-regular fa-thumbs-down"></i>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
