@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
 </head>
 <body>
     <section id="navbar" class="section">
@@ -52,31 +53,36 @@
         <div class="content__title">
             <h1>aespa 에스파 'Spicy' MV</h1>
         </div>
-        <div class="content__uploader">
-            <img src="/imgs/uploader_profile.jpeg" alt="uploader_profile">
-            <h2 class="content__uploader__name">SMTOWN</h2>
+        <div class="content__simple-info">
+            <div class="content__uploader">
+            <img src="/imgs/uploader_profile.jpeg" alt="uploader_profile" class="content__uploader__profile">
+            <div class="content__uploader__info">
+                <h3 class="content__uploader__name">SMTOWN</h3>
             <p class="content__uploader__subscribers">subscribers 31M</p>
+            </div>
             <button class="content__uploader__subs-btn">Subscribe</button>
-        </div>
-        <div class="content__btns">
+            </div>
+            <div class="content__btns">
             <button class="like">
                 <i class="fa-regular fa-thumbs-up"></i>
             </button>
             <button class="dislike">
                 <i class="fa-regular fa-thumbs-down"></i>
             </button>
-            <button class="download">
-                <i class="fa-solid fa-arrow-down">
-                    download
-                </i>
+            <button class="share">
+                <i class="fa-solid fa-share"></i>
+                <p>Share</p>
             </button>
             <button class="etc">
                 <i class="fa-solid fa-ellipsis"></i>
             </button>
+            </div>
         </div>
         <div class="content__explain">
-            <h3 class="content__explain__view"></h3>
-            <h3 class="content__explain__upload-date"></h3>
+            <div class="content__explain__small-title">
+                <p class="content__explain__view">10M</p>
+            <p class="content__explain__upload-date">2023.5.26</p>
+            </div>
             <p class="content__explain__spinnet">aespa's 3rd Mini Album "MY WORLD" is out!
                 Listen and download on your favorite platforms: </p>
         </div>

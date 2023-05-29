@@ -11,6 +11,30 @@ ul {
     list-style: none;
 }
 
+h1 {
+    margin-block-start: 8px;
+    margin-block-end: 8px;
+    font-size: 30px;
+}
+
+h2 {
+    margin-block-start: 4px;
+    margin-block-end: 4px;
+    font-size: 25px;
+}
+
+h3 {
+    margin-block-start: 2px;
+    margin-block-end: 2px;
+    font-size: 20px;
+}
+
+p {
+    margin-block-start: 2px;
+    margin-block-end: 2px;
+    font-size: 15px;
+}
+
 button {
     background-color: transparent;
     cursor: pointer;
@@ -81,7 +105,7 @@ button.search-microphone {
     text-align: center;
     margin-left: 4px;
     margin-bottom: 16px;
-    border: 1px solid darkgray;
+    border: 1px solid transparent;
     
     border-radius: 50%;
     flex: 1;
@@ -106,7 +130,7 @@ li.navbar__menu__item {
     padding-top: 10px;
     text-align: center;
     align-items: center;
-    border: 1px solid darkgray;
+    border: 1px solid transparent;
     border-radius: 50%;
     flex: 1;
     margin-left: 4px;
@@ -118,6 +142,7 @@ li.navbar__menu__item:hover {
 }
 
 #container {
+    position: relative;
     display: flex;
 }
 
@@ -127,14 +152,135 @@ li.navbar__menu__item:hover {
 
 .content__video {
     width: 100%;
-    padding: 16px;
+    min-width: 560px;
+    padding: 8px 16px;
+    z-index: 1;
 }
 
 .content__video__play {
     width: 100%;
-    height: 100%;
+    height: 315px;
     max-width: 917px;
     max-height: 516px;
-
+    margin-top: 0px;
 }
 
+.content__title {
+    padding: 0 16px 16px 16px;
+    margin-top: 0;
+}
+
+.content__simple-info {
+    display: flex;
+}
+
+.content__uploader {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 42.5px;
+    padding: 8px 16px;
+}
+
+.content__uploader__profile {
+    box-sizing: content-box;
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+.content__uploader__info {
+    margin-block-start: 0px;
+}
+
+button.content__uploader__subs-btn {
+    background-color: red;
+    width: 80px;
+    height: 40px;
+    color: white;
+    border-radius: 20px;
+    margin-left: 8px;
+}
+
+button.content__uploader__subs-btn:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.content__btns {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    justify-items: flex-end;
+    padding: 8px 16px;
+}
+
+button.like {
+    padding: 8px 16px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    border-radius: 20px 0px 0px 20px;
+}
+
+button.dislike {
+    transform: scaleX(-1);
+    padding: 8px 16px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 3px;
+    background-color: lightgray;
+    color: black;
+    border-radius: 20px 0px 0px 20px;
+}
+
+button.share {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 16px;
+    width: 84px;
+    height: 40px;
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    border-radius: 20px;
+}
+
+i.fa-share {
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+button.etc {
+    padding: 8px 16px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    border-radius: 50%;
+    margin-left: 4px;
+}
+
+button.like:hover, button.dislike:hover, button.share:hover, button.etc:hover {
+    background-color: darkgray;
+    color: white;
+}
+
+.content__explain {
+    padding: 16px;
+    margin-top: 20px;
+    margin-left: 16px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.content__explain__small-title {
+    display: flex;
+    font-weight: 550;
+    justify-content: space-between;
+}
