@@ -9,18 +9,20 @@ body {
 
 ul {
     list-style: none;
+    margin-block-start: 0px;
+    padding: 0px 8px;
 }
 
 h1 {
-    margin-block-start: 8px;
-    margin-block-end: 8px;
-    font-size: 30px;
+    margin-block-start: 4px;
+    margin-block-end: 4px;
+    font-size: 25px;
 }
 
 h2 {
     margin-block-start: 4px;
     margin-block-end: 4px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 h3 {
@@ -53,8 +55,8 @@ input {
 #navbar {
     position: relative;
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    max-width: 800px;
     height: 60px;
     z-index: 1;
     margin-bottom: 10px;
@@ -65,21 +67,17 @@ input {
 }
 
 .navbar__logo {
-    justify-items: flex-start;
     padding: 16px 8px;
 }
 
 .navbar__search-bar {
     display: flex;
-    flex: 1;
-    flex-basis: 1e-9px;
     min-width: 0px;
     padding: 8px 0;
 }
 
 input.search-bar {
     height: 40px;
-    align-items: center;
     border: 1px solid grey;
     border-radius: 40px 0 0 40px;
     padding: 0px 4px 0px 16px;
@@ -117,7 +115,7 @@ button.search-microphone:hover {
 
 ul.navbar__menu {
     display: flex;
-    justify-content: flex-end;
+    justify-self: end;
     min-width: 100px;
     margin: 0px 8px;
     padding: 8px;
@@ -166,7 +164,7 @@ li.navbar__menu__item:hover {
 }
 
 .content__title {
-    padding: 0 16px 16px 16px;
+    padding: 0 16px;
     margin-top: 0;
 }
 
@@ -283,4 +281,73 @@ button.like:hover, button.dislike:hover, button.share:hover, button.etc:hover {
     display: flex;
     font-weight: 550;
     justify-content: space-between;
+}
+
+#recommendation {
+    width: 402px;
+}
+
+li.recommendation__list__video {
+    display: flex;
+    padding: 8px;
+}
+
+img.recommendation__list__video__thumbnail {
+    width: 168px;
+    height: 94px;
+    border-radius: 10px;
+}
+
+.recommendation__list__info {
+    padding: 0px 4px;
+    margin-left: 8px;
+}
+
+#comments {
+    position: absolute;
+    width: 70%;
+    margin-top: 32px;
+}
+
+.comments__write {
+    display: flex;
+}
+
+img.writer__profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+input.comments__write__box {
+    padding: 4px;
+    margin-top: 4px;
+    width: 75%;
+    max-width: 688.88;
+    border-bottom: 1px solid darkgray;
+    align-content: end;
+    font-size: 15px;
+}
+
+.comments__list__box {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+img.comment__writer__profizqle {
+    width:40px;
+    height: 40px;
+    margin: 8px;
+    margin-right:8px;
+}
+
+.comment__dislike, .comment__like{
+    width: 25px;
+    height: 25px;
+}
+
+.comment__like:hover, .comment__dislike:hover {
+    background-color: lightgray;
+    border-radius: 50%;
 }
