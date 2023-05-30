@@ -62,6 +62,9 @@ input {
     margin-bottom: 10px;
 }
 
+.navbar__left {
+    display: flex;
+}
 .navbar__toggle-btn {
     padding: 16px;
 }
@@ -115,8 +118,6 @@ button.search-microphone:hover {
 
 ul.navbar__menu {
     display: flex;
-    justify-self: end;
-    min-width: 100px;
     margin: 0px 8px;
     padding: 8px;
 }
@@ -139,6 +140,12 @@ li.navbar__menu__item:hover {
     background-color: lightgray;
 }
 
+.user-profile {
+    box-sizing: content-box;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
 #container {
     position: relative;
     display: flex;
@@ -335,7 +342,7 @@ input.comments__write__box {
     margin-bottom: 12px;
 }
 
-img.comment__writer__profizqle {
+img.comment__writer__profile {
     width:40px;
     height: 40px;
     margin: 8px;
